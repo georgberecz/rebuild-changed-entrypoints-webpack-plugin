@@ -1,5 +1,12 @@
-<h1>Rebuild-Changed-Entrypoints-Webpack-Plugin</h1>
-A webpack plugin that makes webpack only (re-)build entrypoints with changed files/dependencies.
+<div align="center">
+  <!-- replace with accurate logo e.g from https://worldvectorlogo.com/ -->
+  <a href="https://github.com/webpack/webpack">
+    <img width="200" height="200" vspace="" hspace="25"
+      src="https://cdn.rawgit.com/webpack/media/e7485eb2/logo/icon.svg">
+  </a>
+  <h1>Rebuild-Changed-Entrypoints-Webpack-Plugin</h1>
+  <p>A webpack plugin that makes webpack only build entrypoints with changed files/dependencies (therefore, skipping entrypoints with no changes).<p>
+</div>
 
 ## Install
 
@@ -28,6 +35,8 @@ module.exports = {
 
 ## Options
 
+TODO
+
 ## How it works
 
 1.  Build up Cache
@@ -42,4 +51,8 @@ No magic :)
 
 ## Motivation
 
-This plugin was written to speed up the build process for the development setup in a gulp environment. For development `gulp.watch` is used, which would not know about. This plugin probably does not make sense, when you use the webpack-dev-server.
+This plugin was written to speed up the build process for the development setup in a gulp environment. For development we use `gulp.watch` to rebuild according files. However, the watcher does not know about entrypoints and their corresponding dependencies.
+
+There might be other use cases, where this plugin makes sense: e.g. when
+
+This plugin probably does not make sense, when you use the webpack-dev-server.
