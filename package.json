@@ -1,0 +1,36 @@
+{
+  "name": "rebuild-changed-entrypoints-webpack-plugin",
+  "version": "0.0.1",
+  "description": "Webpack plugin that takes care of only rebuilding entrypoints that include changed files.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgberecz/rebuild-changed-entrypoints-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "changed",
+    "rebuild",
+    "files",
+    "entrypoints"
+  ],
+  "engines": {
+    "node": ">=8.11.3"
+  },
+  "author": "Georg Berecz @georgberecz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/georgberecz/rebuild-changed-entrypoints-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/georgberecz/rebuild-changed-entrypoints-webpack-plugin#readme",
+  "devDependencies": {
+    "eslint": "^5.2.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "prettier": "^1.13.7"
+  }
+}
