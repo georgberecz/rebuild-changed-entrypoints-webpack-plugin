@@ -10,10 +10,12 @@
 
 ## Install
 
-(not yet - soon™)
-
 ```
 yarn add -D rebuild-changed-entrypoints-webpack-plugin
+```
+
+```
+npm install rebuild-changed-entrypoints-webpack-plugin --save-dev
 ```
 
 ## Usage
@@ -53,6 +55,6 @@ No magic :)
 
 This plugin was written to speed up the build process for the development setup in a gulp environment. For development we use `gulp.watch` to rebuild according files. However, the watcher does not know about entrypoints and their corresponding dependencies.
 
-There might be other use cases, where this plugin makes sense: e.g. when
+However, there might be other use cases, where this plugin makes sense.
 
-This plugin probably does not make sense, when you use the webpack-dev-server.
+This plugin probably **does not** make sense, when you use the webpack-dev-server.
