@@ -42,7 +42,7 @@ There are some options you can pass to modify the behavior of the plugin.
 | Attribute        | Type                           | Required                      | Description                                                                                                                                                                    |
 | ---------------- | ------------------------------ | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | _cacheDirectory_ | `{String}`                     | **True**                      | Specifies the path, where the cache directory `.webpack-changed-plugin-cache` will be generated                                                                                |
-| _logLevel_       | `{"none" | "error" | "debug"}` | **False** - default: `"none"` | Specifies the logLevel for the console output. <br> `"none"` - No logging <br> `"error"` - Only error logs <br> `"debug"` - Prints very detailed information about the process |
+| _logLevel_       | `{"none" \| "error" \| "debug"}` | **False** - default: `"none"` | Specifies the logLevel for the console output. <br> `"none"` - No logging <br> `"error"` - Only error logs <br> `"debug"` - Prints very detailed information about the process |
 
 **webpack.config.js**
 
