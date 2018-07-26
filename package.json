@@ -12,11 +12,14 @@
   },
   "keywords": [
     "webpack",
+    "gulp",
     "plugin",
     "changed",
+    "build",
     "rebuild",
     "files",
-    "entrypoints"
+    "entrypoints",
+    "cache"
   ],
   "engines": {
     "node": ">=8.11.3"
