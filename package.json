@@ -1,6 +1,6 @@
 {
   "name": "rebuild-changed-entrypoints-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack plugin that takes care of only rebuilding entrypoints that include changed files.",
   "main": "lib/index.js",
   "scripts": {
