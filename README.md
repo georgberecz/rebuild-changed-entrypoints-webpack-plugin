@@ -37,15 +37,30 @@ module.exports = {
 
 ## Options
 
-TODO
+There are some options you can pass to modify the behavior of the plugin.
+
+| Attribute        | Type                           | Required                      | Description                                                                                                                                                                    |
+| ---------------- | ------------------------------ | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| _cacheDirectory_ | `{String}`                     | **True**                      | Specifies the path, where the cache directory `.webpack-changed-plugin-cache` will be generated                                                                                |
+| _logLevel_       | `{"none" | "error" | "debug"}` | **False** - default: `"none"` | Specifies the logLevel for the console output. <br> `"none"` - No logging <br> `"error"` - Only error logs <br> `"debug"` - Prints very detailed information about the process |
+
+**webpack.config.js**
+
+```javascript
+plugins: [
+    new RebuildChangedPlugin({
+      cacheDirectory: __dirname,
+    }),
+  ],
+```
 
 ## How it works
 
-1.  Build up Cache
+(1) Build up Cache
 
 The plugin hooks into the webpack compilation process. So, after the dependency tree is build, we cache the corresponding dependencies of every entrypoint and their last modification dates by writing this information to a JSON.
 
-2.  Use cache to determine rebuild targets
+(2) Use cache to determine rebuild targets
 
 When webpack tries to rebuild an entrypoint, we check whether the cache holds information for that entry. If there is information and neither a dependenciy from nor the entrypoint itself changed, it is skipped.
 
